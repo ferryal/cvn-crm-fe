@@ -11,7 +11,6 @@ import {
   Send,
   Zap,
   CheckCircle,
-  TrendingUp,
   User,
 } from "lucide-react";
 import { conversations, messages } from "@/data/mockData";

@@ -82,7 +82,7 @@ const CommandPalette = () => {
     <>
       <button
         onClick={() => setOpen(true)}
-        className="fixed top-4 right-4 z-50 flex items-center gap-2 px-3 py-2 text-sm text-muted-foreground bg-background border border-border rounded-md hover:bg-accent hover:text-accent-foreground transition-colors hidden"
+        className="fixed top-4 right-4 z-50 items-center gap-2 px-3 py-2 text-sm text-muted-foreground bg-background border border-border rounded-md hover:bg-accent hover:text-accent-foreground transition-colors hidden"
       >
         <Search className="w-4 h-4" />
         <span className="hidden sm:inline">Search...</span>

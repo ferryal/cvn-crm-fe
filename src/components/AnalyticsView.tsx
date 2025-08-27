@@ -5,8 +5,6 @@ import {
   Calendar,
   Download,
   Filter,
-  TrendingUp,
-  TrendingDown,
   Users,
   MessageCircle,
   DollarSign,
@@ -17,17 +15,11 @@ import {
 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
-import {
-  ChartContainer,
-  ChartTooltip,
-  ChartLegend,
-} from "@/components/ui/chart";
+import { ChartContainer } from "@/components/ui/chart";
 import {
   Line,
   LineChart,
-  ResponsiveContainer,
   XAxis,
   YAxis,
   CartesianGrid,
@@ -36,7 +28,7 @@ import {
 } from "recharts";
 
 const AnalyticsView = () => {
-  const [timeRange, setTimeRange] = useState("7d");
+  // const [timeRange, setTimeRange] = useState("7d");
   const [selectedMetric, setSelectedMetric] = useState("conversations");
 
   const metrics = [

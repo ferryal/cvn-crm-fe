@@ -8,7 +8,6 @@ import {
   Pause,
   Eye,
   Edit3,
-  Trash2,
   ChevronDown,
   Filter,
   MoreHorizontal,
@@ -17,15 +16,14 @@ import {
   Target,
   ArrowRight,
   CheckCircle,
-  AlertCircle,
 } from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 
 const AutomationsView = () => {
-  const [selectedAutomation, setSelectedAutomation] = useState(null);
+  // const [selectedAutomation, setSelectedAutomation] = useState(null);
   const [searchQuery, setSearchQuery] = useState("");
 
   const automations = [

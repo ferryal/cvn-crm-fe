@@ -1,8 +1,8 @@
 "use client";
 
-import { Search, Plus, Bot, MoreHorizontal, MessageCircle } from "lucide-react";
+import { Search, Plus, Bot, MessageCircle } from "lucide-react";
 import { conversations } from "@/data/mockData";
-import { Card, CardContent } from "@/components/ui/card";
+// import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -159,8 +159,9 @@ const ConversationsList = ({
                 {/* Status and Tags */}
                 <div className="flex items-center gap-2 flex-wrap">
                   <Badge
-                    variant="secondary"
-                    className="text-xs px-2 py-0.5 h-5 font-normal"
+                    className={`text-xs px-2 py-0.5 h-5 font-normal ${getStatusColor(
+                      conversation.status
+                    )}`}
                   >
                     {conversation.status.replace("_", " ")}
                   </Badge>
